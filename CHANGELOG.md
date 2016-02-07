@@ -517,3 +517,34 @@
 - Update main tasks
 - Update supported software versions
 - Update docs
+
+## v1.6.6
+
+- Include rc.local with THP disable
+- Fix disable THP task
+
+## v1.6.7
+
+- Use file module for removal in playbooks
+
+## v1.6.8
+
+- Correct Galaxy meta
+
+## v1.6.9
+
+- Rename role to match GitHub repository name
+- Update documentation
+
+## v1.7.0
+
+- Khanify dependencies, YAML, etc.
+
+## v1.7.1
+
+- YAML... how it does it?
+
+## v1.7.2
+
+- Use role_path to help with inclusion of role into other roles
+  (thanks @franklefebvre)
