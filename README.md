@@ -76,7 +76,7 @@ This role functions with the following software:
 
 This role does not function with the following software:
 
-* CentOS 7.2 — [Bug in CentOS prevents operation of Couchbase Server service])https://bugs.centos.org/view.php?id=9906)
+* CentOS 7.2 — [Bug in CentOS prevents operation of Couchbase Server service](https://bugs.centos.org/view.php?id=9906)
 
 ## Works with Ansible Galaxy
 
@@ -256,3 +256,4 @@ Thanks to these people who have contributed to the role:
 * [Hughjmp](https://github.com/Hughjmp)
 * [SomeoneWeird](https://github.com/SomeoneWeird)
 * [zabullet](https://github.com/zabullet)
+* [gsempe](https://github.com/gsempe)
