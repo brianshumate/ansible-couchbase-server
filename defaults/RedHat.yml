@@ -25,10 +25,15 @@
 
 #### RHEL 7 now by default
 
-couchbase_server_centos_ee_version: 4.1.1
+couchbase_server_centos_ee_version: 4.5.1
 couchbase_server_centos_ee_package: couchbase-server-enterprise-{{ couchbase_server_centos_ee_version }}-centos7.x86_64.rpm
 couchbase_server_centos_ee_url: http://packages.couchbase.com/releases/{{ couchbase_server_centos_ee_version }}/{{ couchbase_server_centos_ee_package }}
-couchbase_server_centos_ee_sha256: 057636313e7087adc040b8f0bc2425dfdcae5a0cb2a598b50ce5bdfc67d9325d
+couchbase_server_centos_ee_sha256: 175efc154650130bc53f8b5cbced1578994f6be6dd7f9c299230090fd17e0343
+
+#couchbase_server_centos_ee_version: 4.1.1
+#couchbase_server_centos_ee_package: couchbase-server-enterprise-{{ couchbase_server_centos_ee_version }}-centos7.x86_64.rpm
+#couchbase_server_centos_ee_url: http://packages.couchbase.com/releases/{{ couchbase_server_centos_ee_version }}/{{ couchbase_server_centos_ee_package }}
+#couchbase_server_centos_ee_sha256: 057636313e7087adc040b8f0bc2425dfdcae5a0cb2a598b50ce5bdfc67d9325d
 
 # couchbase_server_centos_ee_version: 4.1.0
 # couchbase_server_centos_ee_package: couchbase-server-enterprise-{{ couchbase_server_centos_ee_version }}-centos7.x86_64.rpm

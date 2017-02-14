@@ -23,10 +23,15 @@
 #
 #############################################################################
 
-couchbase_server_debian_ee_version: 4.1.1
+couchbase_server_debian_ee_version: 4.5.1
 couchbase_server_debian_ee_package: couchbase-server-enterprise_{{ couchbase_server_debian_ee_version }}-debian7_amd64.deb
 couchbase_server_debian_ee_url: http://packages.couchbase.com/releases/{{ couchbase_server_debian_ee_version }}/{{ couchbase_server_debian_ee_package }}
-couchbase_server_debian_ee_sha256: 1d084294ae257e2a3592268afedd27d0d31c51b5e5957c178ba571f3e43734ad
+couchbase_server_debian_ee_sha256: 5191e4bf2226d6f8b9828c1f09911cb91766ef70e194384c527afbbc812668bf
+
+#couchbase_server_debian_ee_version: 4.1.1
+#couchbase_server_debian_ee_package: couchbase-server-enterprise_{{ couchbase_server_debian_ee_version }}-debian7_amd64.deb
+#couchbase_server_debian_ee_url: http://packages.couchbase.com/releases/{{ couchbase_server_debian_ee_version }}/{{ couchbase_server_debian_ee_package }}
+#couchbase_server_debian_ee_sha256: 1d084294ae257e2a3592268afedd27d0d31c51b5e5957c178ba571f3e43734ad
 
 # couchbase_server_debian_ee_version: 4.1.0
 # couchbase_server_debian_ee_package: couchbase-server-enterprise_{{ couchbase_server_debian_ee_version }}-debian7_amd64.deb
@@ -94,16 +99,21 @@ couchbase_server_debian_ee_sha256: 1d084294ae257e2a3592268afedd27d0d31c51b5e5957
 #
 #############################################################################
 
+couchbase_server_debian_ce_version: 4.5.0
+couchbase_server_debian_ce_package: couchbase-server_{{ couchbase_server_debian_ce_version }}-debian7_amd64.deb
+couchbase_server_debian_ce_url: http://packages.couchbase.com/releases/{{ couchbase_server_debian_ce_version }}/{{ couchbase_server_debian_ce_package }}
+couchbase_server_ubuntu_ce_sha256: 7682b2c90717ba790b729341e32ce5a43f7eacb5279f48f47aae165c0ec3a633
+
 # 4.1.0 Developer Preview
 # couchbase_server_debian_ce_version: 4.1.0
 # couchbase_server_debian_ce_package: couchbase-server_{{ couchbase_server_debian_ce_version }}-dp-debian7_amd64.deb
 # couchbase_server_debian_ce_url: http://packages.couchbase.com/releases/{{ couchbase_server_debian_ce_version }}/{{ couchbase_server_debian_ce_package }}
 # couchbase_server_debian_ce_sha256: be371bdfc27820f4f52f26908c8ad69de89a2d181328770bcbb3378537839c3c
 
-couchbase_server_debian_ce_version: 4.0.0
-couchbase_server_debian_ce_package: couchbase-server-community_{{ couchbase_server_debian_ce_version }}-debian7_amd64.deb
-couchbase_server_debian_ce_url: http://packages.couchbase.com/releases/{{ couchbase_server_debian_ce_version }}/{{ couchbase_server_debian_ce_package }}
-couchbase_server_debian_ce_sha256: 1fb8961e54b0e4a9d1fc2efc925b82054281abf3c520294311d874e66d78cf6e
+#couchbase_server_debian_ce_version: 4.0.0
+#couchbase_server_debian_ce_package: couchbase-server-community_{{ couchbase_server_debian_ce_version }}-debian7_amd64.deb
+#couchbase_server_debian_ce_url: http://packages.couchbase.com/releases/{{ couchbase_server_debian_ce_version }}/{{ couchbase_server_debian_ce_package }}
+#couchbase_server_debian_ce_sha256: 1fb8961e54b0e4a9d1fc2efc925b82054281abf3c520294311d874e66d78cf6e
 
 # couchbase_server_debian_ce_version: 3.0.1
 # couchbase_server_debian_ce_package: couchbase-server-community_{{ couchbase_server_debian_ce_version }}-debian7_amd64.deb
