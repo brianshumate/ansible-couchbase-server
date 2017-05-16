@@ -101,10 +101,15 @@ couchbase_server_centos_ee_sha256: 175efc154650130bc53f8b5cbced1578994f6be6dd7f9
 #
 #############################################################################
 
-couchbase_server_centos_ce_version: 4.5.0
-couchbase_server_centos_ce_package: couchbase-server-{{ couchbase_server_centos_ce_version }}-dp-centos7.x86_64.rpm
+couchbase_server_centos_ce_version: 4.5.1
+couchbase_server_centos_ce_package: couchbase-server-community-{{ couchbase_server_centos_ce_version }}-centos7.x86_64.rpm
 couchbase_server_centos_ce_url: http://packages.couchbase.com/releases/{{ couchbase_server_centos_ce_version }}/{{ couchbase_server_centos_ce_package }}
-couchbase_server_centos_ce_sha256: 698195ccf421ca70cc8cab1358cd6b5340d439a828cecca8ac3846b78da5809c
+couchbase_server_centos_ce_sha256: 26cb9aa196ddb3319aef36d000ea6edb1b72576492d86cdcd52bec3b020f19be
+
+#couchbase_server_centos_ce_version: 4.5.0
+#couchbase_server_centos_ce_package: couchbase-server-{{ couchbase_server_centos_ce_version }}-centos7.x86_64.rpm
+#couchbase_server_centos_ce_url: http://packages.couchbase.com/releases/{{ couchbase_server_centos_ce_version }}/{{ couchbase_server_centos_ce_package }}
+#couchbase_server_centos_ce_sha256: 698195ccf421ca70cc8cab1358cd6b5340d439a828cecca8ac3846b78da5809c
 
 # 4.1.0 Developer Preview
 # couchbase_server_centos_ce_version: 4.1.0
