@@ -18,22 +18,22 @@
   tags: installation
 
 - name: Copy package
-  copy: "src={{ couchbase_server_centos_ee_package }} dest=/tmp/{{ couchbase_server_centos_ee_package }}"
+  copy: "src={{ couchbase_server_centos_ee_package }} dest={{ couchbase_server_tmp_package_path }}/{{ couchbase_server_centos_ee_package }} force=no"
   when: couchbase_server_edition == "enterprise" and couchbase_server_local_package != true
   tags: installation
 
 - name: Install package
   become: yes
   become_user: root
-  yum: "name=/tmp/{{ couchbase_server_centos_ee_package }} state=present"
+  yum: "name={{ couchbase_server_tmp_package_path }}/{{ couchbase_server_centos_ee_package }} state=present"
   when: couchbase_server_edition == "enterprise"
   tags: installation
 
 - name: Package file cleanup
   become: yes
   become_user: root
-  file: "dest=/tmp/{{ couchbase_server_centos_ee_package }} state=absent"
-  when: couchbase_server_edition == "enterprise"
+  file: "dest={{ couchbase_server_tmp_package_path }}/{{ couchbase_server_centos_ee_package }} state=absent"
+  when: couchbase_server_edition == "enterprise" and couchbase_server_remove_package
   tags: installation
 
 
@@ -48,22 +48,22 @@
   tags: installation
 
 - name: Copy package
-  copy: "src={{ couchbase_server_centos_ce_package }} dest=/tmp/{{ couchbase_server_centos_ce_package }}"
+  copy: "src={{ couchbase_server_centos_ce_package }} dest={{ couchbase_server_tmp_package_path }}/{{ couchbase_server_centos_ce_package }} force=no"
   when: couchbase_server_edition == "community" and couchbase_server_local_package != true
   tags: installation
 
 - name: Install package
   become: yes
   become_user: root
-  yum: "name=/tmp/{{ couchbase_server_centos_ce_package }} state=present"
+  yum: "name={{ couchbase_server_tmp_package_path }}/{{ couchbase_server_centos_ce_package }} state=present"
   when: couchbase_server_edition == "community"
   tags: installation
 
 - name: Package file cleanup
   become: yes
   become_user: root
-  file: "dest=/tmp/{{ couchbase_server_centos_ce_package }} state=absent"
-  when: couchbase_server_edition == "community"
+  file: "dest={{ couchbase_server_tmp_package_path }}/{{ couchbase_server_centos_ce_package }} state=absent"
+  when: couchbase_server_edition == "community" and couchbase_server_remove_package
   tags: installation
 
 # Firewall (optional)

@@ -48,7 +48,8 @@ couchbase_server_default_bucket: default
 couchbase_server_internal_ports: "11207:11215"
 couchbase_server_node_data_ports: "21100:21299"
 couchbase_server_sshd_port: 22
-couchbase_server_home_path: "/opt/couchbase"
+couchbase_server_opt_path: "/opt"
+couchbase_server_home_path: "{{ couchbase_server_opt_path }}/couchbase"
 couchbase_server_bin_path: "{{ couchbase_server_home_path }}/bin"
 couchbase_server_config_file: "{{ couchbase_server_home_path }}/var/lib/couchbase/config/config.dat"
 couchbase_server_filesystem: "ext4"
@@ -58,9 +59,11 @@ couchbase_server_mount_options: "noatime,barrier=0,errors=remount-ro"
 couchbase_server_data_path: "{{ couchbase_server_home_path }}/var/lib/couchbase/data"
 couchbase_server_index_path: "{{ couchbase_server_home_path }}/var/lib/couchbase/data"
 couchbase_server_log_path: "{{ couchbase_server_home_path }}/var/lib/couchbase/logs"
-couchbase_server_cbbackup_path: "/opt/couchbase_backups"
+couchbase_server_cbbackup_path: "{{ couchbase_server_opt_path }}/couchbase_backups"
 couchbase_server_cbcollect_path: "/tmp"
 couchbase_server_tmpdir: "/tmp"
 couchbase_server_tune_os: false
 couchbase_server_firewall: false
 couchbase_server_local_package: false
+couchbase_server_remove_package: true
+couchbase_server_tmp_package_path: "/tmp"

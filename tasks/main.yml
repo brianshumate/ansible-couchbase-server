@@ -7,6 +7,10 @@
 - name: Tuning variables
   include_vars: ../defaults/tuning.yml
 
+- name: Make sure {{ couchbase_server_tmp_package_path }} dir exists
+  file: path={{ couchbase_server_tmp_package_path }} state=directory
+  when: couchbase_server_tmp_package_path != '/tmp'
+
 # CentOS tasks
 - include: CentOS.yml
   when: ansible_distribution  == "CentOS"
