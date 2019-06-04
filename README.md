@@ -9,14 +9,13 @@
               .CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC.
                .CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC.
 
+----
+
 ## UNMAINTAINED
 
-WARNING: This repository is here for historical purposes and is no longer activelt maintained!
+**WARNING: This repository is here for historical purposes and is no longer activelt maintained!**
 
-> **NOTE: This role is experimental and not intended for production use**.
-> Feel free to use the role for evaluation, development, or testing, and
-> borrow the ideas contained within for your own production role or playbooks.
-> As with other Couchbase Labs projects, this is primarily for experimentation.
+----
 
 [Couchbase Server](http://www.couchbase.com/couchbase-server/overview) is a
 high performance NoSQL document database available in Community and
@@ -25,6 +24,11 @@ Enterprise editions supported for common operating systems.
 you can use this Ansible role to install Couchbase Server on cluster nodes,
 initialize working clusters, create buckets, and load buckets with test
 documents with the playbooks included in the `examples` directory.
+
+> **NOTE: This role is experimental and not intended for production use**.
+> Feel free to use the role for evaluation, development, or testing, and
+> borrow the ideas contained within for your own production role or playbooks.
+> As with other Couchbase Labs projects, this is primarily for experimentation.
 
 ## 3-Node Development Cluster Quick Start with Vagrant
 
