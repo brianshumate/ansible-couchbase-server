@@ -9,6 +9,10 @@
               .CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC.
                .CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC.
 
+## UNMAINTAINED
+
+WARNING: This repository is here for historical purposes and is no longer activelt maintained!
+
 > **NOTE: This role is experimental and not intended for production use**.
 > Feel free to use the role for evaluation, development, or testing, and
 > borrow the ideas contained within for your own production role or playbooks.
