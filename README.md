@@ -13,7 +13,7 @@
 
 ## UNMAINTAINED
 
-**WARNING: This repository is here for historical purposes and is no longer activelt maintained!**
+**WARNING: This repository is here for historical purposes and is no longer actively maintained!**
 
 ----
 
